@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>葡萄牙旅行手帖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+<style>
+
+:root{--bg:#FFFCF6;--ink:#3E3A39;--c:#F2A497;--y:#F6D27A;--b:#A8D3E6;--g:#B9DAA5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Huninn','PingFang TC','Noto Sans TC',sans-serif;line-height:1.6;font-size:16px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:20;background:var(--bg);border-bottom:3px solid var(--ink);display:flex;gap:6px;padding:8px 10px;overflow-x:auto}
+nav a,nav button{flex:none;font:inherit;font-size:14px;color:var(--ink);text-decoration:none;background:var(--bg);border:3px solid var(--ink);border-radius:999px;padding:2px 12px;cursor:pointer}
+nav a:nth-child(1){background:var(--c)}nav a:nth-child(2){background:var(--y)}nav a:nth-child(3){background:var(--b)}nav a:nth-child(4){background:var(--g)}nav a:nth-child(5){background:var(--c)}
+nav button{margin-left:auto;background:var(--y)}nav button.on{background:var(--ink);color:var(--bg)}
+main{max-width:720px;margin:0 auto;padding:64px 14px 40px}
+section{margin-top:28px}h2{font-size:22px;margin:0 0 12px;display:inline-block;background:var(--y);border:3px solid var(--ink);border-radius:999px;padding:0 16px}
+.card{background:var(--bg);border:3px solid var(--ink);border-radius:24px;padding:14px 16px;margin-bottom:12px;box-shadow:4px 4px 0 var(--ink)}
+.hero{text-align:center;background:var(--b);padding:0;overflow:hidden}.hero svg{display:block;width:100%;height:auto}
+.hero .tx{background:var(--bg);border-top:3px solid var(--ink);padding:12px}
+.hero h1{margin:0;font-size:28px}.cd{display:inline-block;margin-top:8px;background:var(--c);border:3px solid var(--ink);border-radius:999px;padding:2px 18px}.cd b{font-size:26px}
+input,textarea,select{font:inherit;color:var(--ink);background:#fff;border:2px dashed var(--ink);border-radius:10px;padding:2px 8px;width:100%;margin:2px 0}
+textarea{resize:vertical;min-height:40px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.sm{font-size:14px;opacity:.85}
+.fl{display:flex;justify-content:space-between;gap:10px;align-items:center}.fl .big{font-size:20px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px}
+.tab{flex:none;font:inherit;color:var(--ink);background:var(--bg);border:3px solid var(--ink);border-radius:18px;padding:2px 12px;text-align:center;cursor:pointer;line-height:1.3}
+.tab small{display:block;font-size:12px}.tab.on{background:var(--c);transform:translateY(-3px)}
+.tl{position:relative;padding-left:22px;margin-top:8px}.tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;border-left:3px dashed var(--ink)}
+.pop{animation:pop .5s cubic-bezier(.3,1.6,.5,1)}
+.it{position:relative;margin-bottom:12px}.it::before{content:"";position:absolute;left:-22px;top:14px;width:13px;height:13px;border-radius:50%;background:var(--y);border:3px solid var(--ink)}
+.it.must::before{background:var(--c)}.it .card{margin:0;padding:10px 14px;box-shadow:3px 3px 0 var(--ink)}
+.tm{font-size:14px;color:var(--ink);background:var(--g);border:2px solid var(--ink);border-radius:999px;padding:0 10px;display:inline-block}
+.tag{font-size:13px;border:2px solid var(--ink);border-radius:999px;padding:0 9px;display:inline-block}
+.must-b{font-size:13px;background:var(--c);border:2px solid var(--ink);border-radius:999px;padding:0 9px;display:inline-block;transform:rotate(-4deg)}
+.it h3{margin:4px 0 0;font-size:17px}
+.btn{font:inherit;font-size:14px;color:var(--ink);background:var(--g);border:3px solid var(--ink);border-radius:999px;padding:1px 14px;cursor:pointer}.btn.d{background:var(--c)}
+.ck{display:flex;gap:10px;align-items:center;padding:4px 0;cursor:pointer}.ck input[type=checkbox]{appearance:none;width:24px;height:24px;flex:none;border:3px solid var(--ink);border-radius:8px;background:#fff;margin:0;padding:0;cursor:pointer}
+.ck input:checked{background:var(--g)}.ck input:checked::after{content:"✓";display:block;text-align:center;line-height:18px;font-weight:bold}
+.ck.done span{text-decoration:line-through;opacity:.55}
+.bar{background:var(--y);border:3px solid var(--ink);border-radius:18px;padding:8px 12px;margin-bottom:12px}
+.bar .row{margin-top:6px}
+footer{text-align:center;margin-top:30px;font-size:13px;opacity:.7}
+@keyframes pop{0%{transform:scale(.88) translateY(14px);opacity:0}100%{transform:none;opacity:1}}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes dr{0%{transform:translateX(-60px)}100%{transform:translateX(560px)}}
+@keyframes sw{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@keyframes sp{to{transform:rotate(360deg)}}
+.a1{animation:fl 4s ease-in-out infinite}.a2{animation:fl 5.5s ease-in-out infinite .8s}.a3{animation:dr 18s linear infinite}.a4{animation:sw 3.5s ease-in-out infinite;transform-origin:50% 100%}.a5{transform-origin:480px 52px;animation:sp 40s linear infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+body.admin{padding-bottom:96px}
+.ed{outline:2px dashed var(--c);outline-offset:2px;border-radius:6px;min-width:1.5em;display:inline-block;max-width:100%;white-space:pre-wrap;word-break:break-word}
+.ed:empty::before{content:attr(data-ph);opacity:.45}.ed:focus{outline:3px solid var(--c);background:#fff}
+.adminbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--bg);border-top:3px solid var(--ink);padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));display:none;gap:6px;overflow-x:auto}
+body.admin .adminbar{display:flex}.adminbar .btn{flex:none;padding:3px 12px}
+.adminbar b{flex:none;align-self:center;font-weight:400;font-size:14px;background:var(--c);border:3px solid var(--ink);border-radius:999px;padding:0 10px}
+.mini{font:inherit;font-size:13px;color:var(--ink);background:var(--bg);border:2px solid var(--ink);border-radius:999px;padding:0 10px;cursor:pointer;margin:4px 4px 0 0}
+.ov{position:fixed;inset:0;z-index:100;background:rgba(62,58,57,.35);display:grid;place-items:center;padding:16px}
+.dlg{width:100%;max-width:340px;margin:0;animation:pop .4s cubic-bezier(.3,1.5,.5,1)}.dlg h3{margin:0 0 10px}
+.fld{display:grid;gap:4px;font-size:14px;margin-bottom:10px}.err{color:#B3402F;min-height:1.4em;font-size:14px;margin:0}.dlg .row{justify-content:flex-end}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);z-index:120;background:var(--y);border:3px solid var(--ink);border-radius:999px;padding:4px 18px;font-size:14px;display:none;max-width:90vw;text-align:center}
+.toast.show{display:block;animation:pop .35s cubic-bezier(.3,1.5,.5,1)}
+.admbanner{border:3px dashed var(--ink);border-radius:20px;padding:8px 14px;font-size:14px;margin-bottom:14px}
+.adm-box{display:grid;gap:8px;margin-top:8px;text-align:left}.adm-box label{display:grid;gap:2px;font-size:14px}
+.alt{margin-top:6px;border:2px dashed var(--ink);border-radius:10px;padding:2px 8px;font-size:14px}
+.h2b{background:var(--b);margin-top:20px}
+</style></head><body>
+<nav id="nav"></nav>
+<div id="app"></div>
+<div id="adminbar" class="adminbar"></div><div id="modal"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<input type="file" id="imp" accept="application/json,.json" hidden>
+<script type="application/json" id="seed">{
+ "passHash": "",
+ "trip": {
+  "title": "葡萄牙旅行手帖",
+  "sub": "里斯本 · 辛特拉 · 波多 · 杜羅河谷 · 阿威羅",
+  "depart": "2027-04-18T00:00",
+  "end": "2027-04-28T00:00"
+ },
+ "flights": [
+  {
+   "dir": "去程",
+   "date": "4/17 或 4/18",
+   "no": "航班待填",
+   "route": "台北 → 里斯本 LIS",
+   "time": "抵達時間待填",
+   "note": "請以 2027 年最新訂單為準"
+  },
+  {
+   "dir": "回程",
+   "date": "4/27",
+   "no": "航班待填",
+   "route": "里斯本 LIS → 台北",
+   "time": "起飛時間待填",
+   "note": "預留機場、託運與安檢緩衝"
+  }
+ ],
+ "stays": [
+  {
+   "city": "里斯本（前段）",
+   "dates": "4/18–4/22",
+   "name": "飯店名稱待填",
+   "addr": "地址待填",
+   "note": "4/22 先確認行李寄放"
+  },
+  {
+   "city": "波多",
+   "dates": "4/22–4/26",
+   "name": "飯店名稱待填",
+   "addr": "地址待填",
+   "note": "靠近 São Bento 車站較方便"
+  },
+  {
+   "city": "里斯本（返程）",
+   "dates": "4/26–4/27",
+   "name": "飯店名稱待填",
+   "addr": "地址待填",
+   "note": "隔日機場日"
+  }
+ ],
+ "days": [
+  {
+   "date": "4/18",
+   "wk": "日",
+   "title": "抵達里斯本・貝倫河岸",
+   "items": [
+    {
+     "t": "抵達",
+     "n": "LIS 機場 → 飯店",
+     "d": "入住後休息；依航班縮短路線",
+     "g": "搭車",
+     "m": false,
+     "a": ""
+    },
+    {
+     "t": "晚上",
+     "n": "Taberna dos Ferreiros 晚餐",
+     "d": "★ 章魚、烤沙丁魚、葡式鴨飯",
+     "g": "搭車",
+     "m": false,
+     "a": "Sardinhas Assadas 烤沙丁魚・Arroz de Pato 葡式鴨飯；甜點 Pastel de Belém 貝倫蛋塔"
+    },
+    {
+     "t": "飯後",
+     "n": "貝倫河岸散步・Pastéis de Belém",
+     "d": "貝倫蛋塔；太晚到就直接休息",
+     "g": "步行",
+     "m": false,
+     "a": ""
+    }
+   ],
+   "sites": [
+    {
+     "n": "貝倫 Belém",
+     "t": "塔霍河沿岸的航海史街區，今晚只感受河岸，明天再細看修道院與河口古蹟。"
+    }
+   ]
+  },
+  {
+   "date": "4/19",
+   "wk": "一",
+   "title": "城堡・老城・廣場與日落",
+   "items": [
+    {
+     "t": "上午",
+     "n": "聖喬治城堡 → 聖露西亞觀景台 → 主教座堂",
+     "d": "俯瞰阿爾法瑪紅瓦屋頂與磁磚畫",
+     "g": "步行",
+     "m": true,
+     "a": ""
+    },
+    {
+     "t": "午餐",
+     "n": "Agulha no Palheiro",
+     "d": "★ Pica-pau 葡式炒牛肉塊",
+     "g": "步行",
+     "m": false,
+     "a": "Polvo 章魚・Camarão 蝦・Atum 鮪魚"
+    },
+    {
+     "t": "午後",
+     "n": "商業廣場 → 奧古斯塔街 → 羅西奧",
+     "d": "順路逛罐頭工坊 Conserveira de Lisboa",
+     "g": "步行",
+     "m": false,
+     "a": ""
+    },
+    {
+     "t": "下午",
+     "n": "卡爾莫修道院／聖胡斯塔升降機（二選一）",
+     "d": "排隊太久就只看外觀",
+     "g": "步行",
+     "m": true,
+     "a": ""
+    },
+    {
+     "t": "傍晚",
+     "n": "Manteigaria 蛋塔・Senhora do Monte 日落",
+     "d": "日落時間請重查",
+     "g": "搭車",
+     "m": false,
+     "a": "A Vida Portuguesa 與 Bertrand Chiado 書店擇一，皆為選項"
+    },
+    {
+     "t": "晚餐",
+     "n": "Taberna da Rua das Flores",
+     "d": "★ 當日黑板菜",
+     "g": "步行",
+     "m": false,
+     "a": "點心：Pastel de Nata 葡式蛋塔"
+    }
+   ],
+   "sites": [
+    {
+     "n": "聖喬治城堡",
+     "t": "山丘自鐵器時代就有人居住，1147年後成王室要地；沿城牆可看紅瓦屋頂、塔霍河與各時代遺跡。"
+    },
+    {
+     "n": "聖露西亞觀景台",
+     "t": "露台牆面有舊城磁磚畫，先看畫、再轉身對照眼前街景，是最直接的 azulejos 體驗。"
+    },
+    {
+     "n": "里斯本主教座堂",
+     "t": "1147年後興建，羅馬式雙塔與後世改建並存，見證多次地震後的修補。"
+    },
+    {
+     "n": "商業廣場與卡爾莫",
+     "t": "1755年地震毀去舊王宮，廣場成為重建門面；卡爾莫無屋頂的拱柱保留災難另一面。"
+    },
+    {
+     "n": "聖胡斯塔與兩座觀景台",
+     "t": "升降機連接低處 Baixa 與高處 Carmo；Senhora do Monte 日落前側光最適合看屋頂。"
+    }
+   ]
+  },
+  {
+   "date": "4/20",
+   "wk": "二",
+   "title": "Belém 航海史・LX Factory",
+   "items": [
+    {
+     "t": "上午",
+     "n": "熱羅尼莫斯修道院 → 發現者紀念碑 → 貝倫塔",
+     "d": "修道院週二至週日開放；迴廊最值得留時間",
+     "g": "步行",
+     "m": true,
+     "a": ""
+    },
+    {
+     "t": "午餐",
+     "n": "O Prado",
+     "d": "★ 烤魚、炒牛肉塊、鱈魚料理",
+     "g": "步行",
+     "m": false,
+     "a": "Pica-pau 炒牛肉塊・Bacalhau 鹽漬鱈魚料理"
+    },
+    {
+     "t": "午後",
+     "n": "LX Factory 創意園區",
+     "d": "散步逛店",
+     "g": "搭車",
+     "m": false,
+     "a": ""
+    },
+    {
+     "t": "晚餐",
+     "n": "Guelra Restaurante",
+     "d": "★ 深海紅蝦燉飯、蒜香蝦、生蠔",
+     "g": "搭車",
+     "m": false,
+     "a": "Arroz de Carabineiro 紅蝦燉飯・Camarão ao Alho 蒜香蝦・Ostras 生蠔"
+    }
+   ],
+   "sites": [
+    {
+     "n": "熱羅尼莫斯修道院",
+     "t": "曼努埃爾式建築代表，迴廊石雕把繩索、植物與海洋意象編入柱廊；只入內一處就選這裡。"
+    },
+    {
+     "n": "發現者紀念碑",
+     "t": "1960年重建，船首排列航海時代人物；也想想哪些人被紀念、哪些沒有。"
+    },
+    {
+     "n": "貝倫塔",
+     "t": "十六世紀初的河口防禦塔；沿河岸走遠一點再回頭看，更能理解守望功能。"
+    },
+    {
+     "n": "LX Factory",
+     "t": "阿爾坎塔拉舊工業區改造的書店、餐廳與設計店，可抬頭看廠房骨架與牆面作品。"
+    }
+   ]
+  },
+  {
+   "date": "4/21",
+   "wk": "三",
+   "title": "Sintra 生日・Belcanto",
+   "items": [
+    {
+     "t": "07:45",
+     "n": "飯店 → Campolide 車站 → 辛特拉",
+     "d": "早餐 O Melhor Croissant da Rua",
+     "g": "火車",
+     "m": false,
+     "a": "早餐：O Melhor Croissant da Rua 可頌"
+    },
+    {
+     "t": "上午",
+     "n": "佩納宮 Pena Palace",
+     "d": "山上可搭接駁，預留園區步行時間",
+     "g": "接駁",
+     "m": true,
+     "a": "備案：摩爾人城堡或蒙塞拉特宮擇一，體力與預約允許才加"
+    },
+    {
+     "t": "午餐",
+     "n": "Incomum by Luís Santos",
+     "d": "★ 章魚、黑色扁麵",
+     "g": "步行",
+     "m": false,
+     "a": "Linguine Negro 黑色扁麵・Ravioli de Cogumelos 蘑菇餃"
+    },
+    {
+     "t": "午後",
+     "n": "雷加萊拉莊園",
+     "d": "螺旋啟蒙井與地下通道",
+     "g": "步行",
+     "m": true,
+     "a": ""
+    },
+    {
+     "t": "傍晚",
+     "n": "火車返 Rossio，休息換裝",
+     "d": "",
+     "g": "火車",
+     "m": false,
+     "a": ""
+    },
+    {
+     "t": "晚上",
+     "n": "Belcanto 生日晚餐 🎂",
+     "d": "★ 品嚐套餐；本日最高優先",
+     "g": "搭車",
+     "m": true,
+     "a": "Menu de Degustação 品嚐套餐，以訂位與當季菜單為準"
+    }
+   ],
+   "sites": [
+    {
+     "n": "佩納宮",
+     "t": "1838年費迪南二世買下十六世紀修道院改建，紅黃外牆與多種風格並置，別忽略修道院舊部分。"
+    },
+    {
+     "n": "摩爾人城堡",
+     "t": "十世紀伊斯蘭時期所建，守住辛特拉山脊；重點在地形與貼合岩石的城牆。"
+    },
+    {
+     "n": "雷加萊拉莊園",
+     "t": "近代園林設計：宮邸、螺旋啟蒙井與地下通道，由地面走入井底再從通道離開，慢慢走即可。"
+    },
+    {
+     "n": "蒙塞拉特宮",
+     "t": "十九世紀英國收藏家打造的宮殿與植物園，哥德、印度與摩爾式元素交織，為備案。"
+    }
+   ]
+  },
+  {
+   "date": "4/22",
+   "wk": "四",
+   "title": "Fronteira 瓷磚 → 波多",
+   "items": [
+    {
+     "t": "上午",
+     "n": "弗龍泰拉宮瓷磚庭園導覽",
+     "d": "先確認行李寄放；瓷磚博物館整修中",
+     "g": "搭車",
+     "m": true,
+     "a": "備案 A：國家瓷磚博物館，官方列整修關閉，重新開放才採用"
+    },
+    {
+     "t": "午餐",
+     "n": "A Tasquinha do Lagarto",
+     "d": "詢問當日料理",
+     "g": "搭車",
+     "m": false,
+     "a": "Prato do Dia 當日料理（建議詢問，非已核對菜單）"
+    },
+    {
+     "t": "下午",
+     "n": "取行李 → CP 城際列車 → 波多 Campanhã",
+     "d": "出發站與班次待確認",
+     "g": "火車",
+     "m": false,
+     "a": ""
+    },
+    {
+     "t": "晚上",
+     "n": "Tapabento S. Bento",
+     "d": "★ 海鮮、伊比利黑豬",
+     "g": "步行",
+     "m": false,
+     "a": "Marisco 海鮮・Porco Preto 伊比利黑豬"
+    }
+   ],
+   "sites": [
+    {
+     "n": "弗龍泰拉宮",
+     "t": "約1670年興建的夏季宅邸，1755年地震後擴建為主要居所，保存大量十七世紀原址磁磚。"
+    },
+    {
+     "n": "國王長廊",
+     "t": "長廊、噴泉與磁磚矮牆圍出正式花園，留意磁磚畫如何順著牆面轉折。"
+    },
+    {
+     "n": "騎士湖",
+     "t": "十七世紀庭園景觀，從湖邊回望長廊，水面與磁磚畫彼此映照。"
+    },
+    {
+     "n": "國家瓷磚博物館",
+     "t": "設在舊修道院，目前整修關閉；2027重開後再依班次決定是否替換。"
+    }
+   ]
+  },
+  {
+   "date": "4/23",
+   "wk": "五",
+   "title": "波多藍白磁磚步行日",
+   "items": [
+    {
+     "t": "上午",
+     "n": "聖本篤車站 → 巴塔利亞廣場 → 聖伊爾德豐索堂 → 靈魂禮拜堂",
+     "d": "車站大廳約兩萬片磁磚",
+     "g": "步行",
+     "m": true,
+     "a": "Bolhão 市場可選"
+    },
+    {
+     "t": "午餐",
+     "n": "O Rápido",
+     "d": "★ 波多式牛肚燉豆",
+     "g": "步行",
+     "m": false,
+     "a": "Bacalhau 鱈魚料理"
+    },
+    {
+     "t": "午後",
+     "n": "卡爾莫教堂 → Lello → 牧師塔 → 勝利觀景台 → 花街 → 主教座堂",
+     "d": "Lello、Clérigos 排隊久就看外觀",
+     "g": "步行",
+     "m": false,
+     "a": ""
+    },
+    {
+     "t": "晚餐",
+     "n": "Taberna dos Mercadores",
+     "d": "★ 海鮮麵包燉、章魚焗飯",
+     "g": "步行",
+     "m": false,
+     "a": "Polvo com Arroz no Forno 章魚焗飯・Bacalhau"
+    }
+   ],
+   "sites": [
+    {
+     "n": "聖本篤車站",
+     "t": "大廳約兩萬片磁磚由若熱・科拉索創作，先站中央看整面牆，再靠近分辨人物。"
+    },
+    {
+     "n": "聖伊爾德豐索堂",
+     "t": "正面磁磚同出科拉索之手，先從廣場看完整立面。"
+    },
+    {
+     "n": "靈魂禮拜堂",
+     "t": "1929年外牆覆上藍白磁磚，描繪聖方濟各與聖加大利納，繞到轉角看畫面連續。"
+    },
+    {
+     "n": "卡爾莫教堂",
+     "t": "十八世紀洛可可建築，側牆磁磚畫為1912年增設，旁邊還夾著極窄小屋。"
+    },
+    {
+     "n": "波多主教座堂",
+     "t": "羅馬式根基疊加哥德與巴洛克，迴廊有大型磁磚，是理解舊城與河港關係的起點。"
+    }
+   ]
+  },
+  {
+   "date": "4/24",
+   "wk": "六",
+   "title": "Ribeira・Gaia 與酒窖",
+   "items": [
+    {
+     "t": "上午",
+     "n": "交易所宮 → 里貝拉河岸 → 路易一世橋",
+     "d": "阿拉伯廳是重點",
+     "g": "步行",
+     "m": true,
+     "a": ""
+    },
+    {
+     "t": "午餐",
+     "n": "Casa Dias（Gaia）",
+     "d": "★ Francesinha 波多三明治",
+     "g": "步行",
+     "m": false,
+     "a": "是否供應以當日菜單為準"
+    },
+    {
+     "t": "15:30",
+     "n": "Graham’s 1890 導覽與品酒",
+     "d": "約兩小時，須預約",
+     "g": "步行",
+     "m": true,
+     "a": "須預訂確認"
+    },
+    {
+     "t": "傍晚",
+     "n": "莫羅花園看日落",
+     "d": "",
+     "g": "步行",
+     "m": false,
+     "a": ""
+    },
+    {
+     "t": "晚餐",
+     "n": "Cozinha da Ci",
+     "d": "★ 燉豬頰、炸鱈魚球",
+     "g": "搭車",
+     "m": false,
+     "a": "Pastéis / Bolinhos de Bacalhau 炸鱈魚球"
+    }
+   ],
+   "sites": [
+    {
+     "n": "證券交易所宮",
+     "t": "1832年大火後由商會興建，最著名的阿拉伯廳於1880年完成。"
+    },
+    {
+     "n": "里貝拉河岸",
+     "t": "窄巷、階梯與層疊街屋，石板路不平，散步放慢；屬世界遺產範圍。"
+    },
+    {
+     "n": "路易一世橋",
+     "t": "1886年啟用的雙層鐵橋，上層看河谷全景、下層回望拱形鋼構。"
+    },
+    {
+     "n": "Graham’s 1890 酒窖",
+     "t": "1820年創立，葡萄自河谷來、波特酒在對岸熟成；隔天去皮尼昂就能對上地形。"
+    }
+   ]
+  },
+  {
+   "date": "4/25",
+   "wk": "日",
+   "title": "Douro 河谷・Pinhão",
+   "items": [
+    {
+     "t": "上午",
+     "n": "CP 杜羅線 → Pinhão",
+     "d": "Régua 是否轉車看當日班表",
+     "g": "火車",
+     "m": true,
+     "a": ""
+    },
+    {
+     "t": "中午",
+     "n": "皮尼昂車站磁磚 → Quinta das Carvalhas",
+     "d": "葡萄園導覽與試飲，先預約",
+     "g": "步行",
+     "m": true,
+     "a": ""
+    },
+    {
+     "t": "午餐",
+     "n": "酒莊或鎮上午餐",
+     "d": "★ 肉料理配杜羅葡萄酒",
+     "g": "",
+     "m": false,
+     "a": "Pinhão 餐廳待訂，無特定餐廳與菜單已確認"
+    },
+    {
+     "t": "晚上",
+     "n": "火車返波多・自由晚餐",
+     "d": "保留返程緩衝",
+     "g": "火車",
+     "m": false,
+     "a": "晚餐候選：Bacalhau 鹽漬鱈魚或 Peixe Grelhado 烤魚"
+    }
+   ],
+   "sites": [
+    {
+     "n": "杜羅河谷",
+     "t": "梯田記錄數百年種葡萄的歷史；春天是生長季，不是秋收畫面。"
+    },
+    {
+     "n": "皮尼昂車站",
+     "t": "磁磚畫描繪葡萄採收、波特酒製作與河上運酒，先沿兩側牆面慢慢看。"
+    },
+    {
+     "n": "Quinta das Carvalhas",
+     "t": "保存老藤與在地品種，導覽與試飲依預訂方案不同。"
+    }
+   ]
+  },
+  {
+   "date": "4/26",
+   "wk": "一",
+   "title": "Aveiro・Costa Nova → 里斯本",
+   "items": [
+    {
+     "t": "上午",
+     "n": "波多 → 阿威羅",
+     "d": "先寄放行李",
+     "g": "火車",
+     "m": false,
+     "a": ""
+    },
+    {
+     "t": "上午",
+     "n": "舊車站・新藝術街區",
+     "d": "Museu Arte Nova 週一不開，看外觀",
+     "g": "步行",
+     "m": true,
+     "a": "先確認行李寄放營業時間"
+    },
+    {
+     "t": "午餐",
+     "n": "阿威羅午餐（待選）",
+     "d": "★ Ovos Moles 軟蛋黃甜點",
+     "g": "步行",
+     "m": false,
+     "a": "Peixe do Dia 當日魚料理或 Prato do Dia 今日特餐（候選），飯後吃 Ovos Moles"
+    },
+    {
+     "t": "午後",
+     "n": "Costa Nova 條紋屋",
+     "d": "",
+     "g": "搭車",
+     "m": true,
+     "a": ""
+    },
+    {
+     "t": "晚上",
+     "n": "火車 → 里斯本，入住",
+     "d": "晚餐依車次",
+     "g": "火車",
+     "m": false,
+     "a": "晚餐依車次，里斯本待選"
+    }
+   ],
+   "sites": [
+    {
+     "n": "阿威羅舊車站",
+     "t": "外牆磁磚描繪地方風景，與波多聖本篤、皮尼昂形成磁磚旅行線。"
+    },
+    {
+     "n": "新藝術街區",
+     "t": "植物曲線、鍛鐵陽台與彩色磁磚；Museu Arte Nova 週一不開，看外觀即可。"
+    },
+    {
+     "n": "阿威羅軟蛋黃",
+     "t": "Ovos Moles：蛋黃與糖內餡包在薄聖餅皮，做成魚、貝殼造型，白天品嚐或帶走。"
+    },
+    {
+     "n": "Costa Nova 條紋屋",
+     "t": "源自漁民木屋 Palheiros，現為度假聚落標誌，可挑喜歡的街段慢走。"
+    }
+   ]
+  },
+  {
+   "date": "4/27",
+   "wk": "二",
+   "title": "返程機場日",
+   "items": [
+    {
+     "t": "早上",
+     "n": "飯店退房 → 咖啡 + 蛋塔",
+     "d": "",
+     "g": "",
+     "m": false,
+     "a": "Café 咖啡 + Pastel de Nata 葡式蛋塔"
+    },
+    {
+     "t": "上午",
+     "n": "前往 LIS 機場",
+     "d": "預留託運與安檢時間",
+     "g": "搭車",
+     "m": false,
+     "a": "午餐、晚餐依航班時間在途中或機場用餐"
+    }
+   ],
+   "sites": [
+    {
+     "n": "回望 azulejos",
+     "t": "若有空檔，回想一路見過的磁磚：里斯本山城街角、波多整片歷史畫面、阿威羅車站。"
+    }
+   ]
+  }
+ ],
+ "lists": [
+  {
+   "title": "待辦預約",
+   "items": [
+    {
+     "text": "Belcanto 4/21 生日晚餐訂位",
+     "done": false
+    },
+    {
+     "text": "Pena 宮入宮時段",
+     "done": false
+    },
+    {
+     "text": "Graham’s 1890 導覽 4/24 15:30",
+     "done": false
+    },
+    {
+     "text": "Quinta das Carvalhas 酒莊時段",
+     "done": false
+    },
+    {
+     "text": "CP 火車：4/22、4/25、4/26 班次",
+     "done": false
+    },
+    {
+     "text": "Fronteira 宮導覽預約",
+     "done": false
+    },
+    {
+     "text": "確認 4/19 日落時間",
+     "done": false
+    }
+   ]
+  },
+  {
+   "title": "出發前清單",
+   "items": [
+    {
+     "text": "護照效期（6 個月以上）",
+     "done": false
+    },
+    {
+     "text": "旅遊保險",
+     "done": false
+    },
+    {
+     "text": "信用卡與海外提款",
+     "done": false
+    },
+    {
+     "text": "手機網路／eSIM",
+     "done": false
+    },
+    {
+     "text": "下載離線地圖",
+     "done": false
+    },
+    {
+     "text": "換少量歐元現金",
+     "done": false
+    },
+    {
+     "text": "確認 2027 年機票",
+     "done": false
+    },
+    {
+     "text": "重查各景點開放時間與車次",
+     "done": false
+    }
+   ]
+  },
+  {
+   "title": "行李清單",
+   "items": [
+    {
+     "text": "護照、機票電子檔",
+     "done": false
+    },
+    {
+     "text": "轉接插頭（歐規）",
+     "done": false
+    },
+    {
+     "text": "行動電源、充電線",
+     "done": false
+    },
+    {
+     "text": "好走的鞋（石板坡多）",
+     "done": false
+    },
+    {
+     "text": "薄外套、輕便雨具",
+     "done": false
+    },
+    {
+     "text": "防曬用品、帽子",
+     "done": false
+    },
+    {
+     "text": "洗漱與常備藥品",
+     "done": false
+    },
+    {
+     "text": "環保袋（帶蛋塔和戰利品）",
+     "done": false
+    }
+   ]
+  }
+ ]
+}</script>
+<script>
+(()=>{
+'use strict';
+const HERO="<rect width=\"600\" height=\"300\" fill=\"#A8D3E6\"/>\n<g class=\"a5\"><circle cx=\"480\" cy=\"52\" r=\"26\" fill=\"#F6D27A\" stroke=\"#3E3A39\" stroke-width=\"3\"/><path d=\"M480 14v-8M480 98v-8M442 52h-8M526 52h-8\" stroke=\"#3E3A39\" stroke-width=\"3\" stroke-linecap=\"round\"/></g>\n<g class=\"a1\"><path d=\"M60 70q0-22 24-22 8-16 28-10 14-6 24 8 20 2 18 22z\" fill=\"#FFFCF6\" stroke=\"#3E3A39\" stroke-width=\"3\"/></g>\n<g class=\"a2\"><path d=\"M300 40q0-16 18-16 6-12 22-6 12-4 18 8 14 2 12 14z\" fill=\"#FFFCF6\" stroke=\"#3E3A39\" stroke-width=\"3\"/></g>\n<path d=\"M0 190q100-40 200-10t220-20 180 20v110H0z\" fill=\"#B9DAA5\" stroke=\"#3E3A39\" stroke-width=\"3\"/>\n<g class=\"a4\"><path d=\"M390 150h50v-70h-8v-10h8l-4-16h-42l-4 16h8v10h-8z\" fill=\"#FFFCF6\" stroke=\"#3E3A39\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M386 150h58v18h-58z\" fill=\"#F2A497\" stroke=\"#3E3A39\" stroke-width=\"3\"/><rect x=\"408\" y=\"96\" width=\"14\" height=\"22\" rx=\"7\" fill=\"#A8D3E6\" stroke=\"#3E3A39\" stroke-width=\"3\"/><path d=\"M392 54l10-18 10 18M418 54l10-18 10 18\" fill=\"#F6D27A\" stroke=\"#3E3A39\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g>\n<path d=\"M0 232h600v68H0z\" fill=\"#A8D3E6\" stroke=\"#3E3A39\" stroke-width=\"3\"/>\n<path d=\"M0 232h600\" stroke=\"#3E3A39\" stroke-width=\"3\"/><path d=\"M30 258q15-10 30 0t30 0M210 270q15-10 30 0t30 0M420 255q15-10 30 0t30 0\" fill=\"none\" stroke=\"#FFFCF6\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<g class=\"a3\"><rect x=\"0\" y=\"176\" width=\"92\" height=\"46\" rx=\"14\" fill=\"#F6D27A\" stroke=\"#3E3A39\" stroke-width=\"3\"/><rect x=\"10\" y=\"186\" width=\"22\" height=\"18\" rx=\"5\" fill=\"#FFFCF6\" stroke=\"#3E3A39\" stroke-width=\"3\"/><rect x=\"40\" y=\"186\" width=\"22\" height=\"18\" rx=\"5\" fill=\"#FFFCF6\" stroke=\"#3E3A39\" stroke-width=\"3\"/><rect x=\"68\" y=\"186\" width=\"16\" height=\"30\" rx=\"5\" fill=\"#F2A497\" stroke=\"#3E3A39\" stroke-width=\"3\"/><path d=\"M46 176l14-22h22\" fill=\"none\" stroke=\"#3E3A39\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"22\" cy=\"224\" r=\"7\" fill=\"#3E3A39\"/><circle cx=\"70\" cy=\"224\" r=\"7\" fill=\"#3E3A39\"/></g>\n<g class=\"a1\"><path d=\"M110 236l40 0-8 18h-24z\" fill=\"#F2A497\" stroke=\"#3E3A39\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M130 236v-40l24 34z\" fill=\"#FFFCF6\" stroke=\"#3E3A39\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g>";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const KEY='pt27v2',SEED=JSON.parse($('#seed').textContent);
+let S=null;try{S=JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){}
+if(!S||!S.days||!S.trip)S=JSON.parse(JSON.stringify(SEED));
+let admin=false;try{admin=sessionStorage.getItem('trip-adm')==='1'}catch(e){}
+let cur=0;
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const getP=p=>p.split('.').reduce((o,k)=>o==null?o:o[k],S);
+const setP=(p,v)=>{const k=p.split('.'),l=k.pop();k.reduce((o,x)=>o[x],S)[l]=v};
+const hash=s=>{let h1=0xdeadbeef,h2=0x41c6ce57;for(let i=0;i<s.length;i++){const c=s.charCodeAt(i);h1=Math.imul(h1^c,2654435761);h2=Math.imul(h2^c,1597334677)}h1=Math.imul(h1^(h1>>>16),2246822507)^Math.imul(h2^(h2>>>13),3266489909);h2=Math.imul(h2^(h2>>>16),2246822507)^Math.imul(h1^(h1>>>13),3266489909);return(4294967296*(2097151&h2)+(h1>>>0)).toString(36)};
+const passOK=pw=>S.passHash?hash(pw)===S.passHash:pw==='admin1234';
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.remove('show');void t.offsetWidth;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),2600)};
+const E=(p,ph,cls)=>{let v=getP(p);if(v==null)v='';cls=cls||'';return admin?`<span class="ed ${cls}" contenteditable="true" spellcheck="false" data-path="${p}" data-ph="${esc(ph||'')}">${esc(v)}</span>`:(v?`<span class="${cls}">${esc(v)}</span>`:'')};
+const sel=(p,o)=>{const v=getP(p)||'';return `<select data-path="${p}">${o.map(x=>`<option value="${esc(x[0])}"${x[0]===v?' selected':''}>${esc(x[1])}</option>`).join('')}</select>`};
+const mini=(a,l,x)=>`<button class="mini" data-act="${a}" ${x||''}>${l}</button>`;
+const TAGC={步行:'var(--g)',火車:'var(--b)',搭車:'var(--c)',接駁:'var(--y)'};
+const TAGOPTS=[['','（無交通標籤）']].concat(Object.keys(TAGC).map(k=>[k,k]));
+const btn=(a,l,x)=>admin?`<p style="margin:6px 0 0"><button class="btn" data-act="${a}" ${x||''}>＋ ${l}</button></p>`:'';
+
+function fillNav(){$('#nav').innerHTML='<a href="#home">首頁</a><a href="#flight">航班</a><a href="#days">行程</a><a href="#lists">清單</a><a href="#hotel">住宿</a><button data-act="'+(admin?'logout':'login')+'" class="'+(admin?'on':'')+'" aria-label="後台模式">'+(admin?'離開後台':'🔒 後台')+'</button>'}
+function fillBar(){$('#adminbar').innerHTML=admin?'<b>後台模式</b><button class="btn" data-act="export-html">下載更新後的網頁</button><button class="btn" data-act="export-json">匯出資料</button><button class="btn" data-act="import-json">匯入資料</button><button class="btn" data-act="chpass">改密碼</button><button class="btn d" data-act="reset">還原預設</button><button class="btn" data-act="logout">離開後台</button>':''}
+function fillHome(){const T=S.trip;$('#home').innerHTML=(admin?'<div class="admbanner">後台模式：點虛線框裡的文字就能直接修改，修改會自動存在這個瀏覽器。要永久保存，請用底部「下載更新後的網頁」。</div>':'')+`<div class="card hero"><svg viewBox="0 0 600 300" role="img" aria-label="貝倫塔、黃色電車與海邊風景插圖">${HERO}</svg><div class="tx"><h1>${E('trip.title','標題')}</h1><div class="sm">${E('trip.sub','副標')}</div>${admin?`<div class="adm-box"><label>出發時間（倒數用）<input type="datetime-local" data-path="trip.depart" value="${esc(T.depart)}"></label><label>回程時間<input type="datetime-local" data-path="trip.end" value="${esc(T.end)}"></label></div>`:''}<div class="cd" id="cd"></div></div></div>`}
+function tick(){const el=$('#cd');if(!el)return;const n=Date.now(),a=new Date(S.trip.depart),z=new Date(S.trip.end);
+if(n<a){const ms=a-n;el.innerHTML='出發倒數 <b>'+Math.floor(ms/864e5)+'</b> 天 '+Math.floor(ms%864e5/36e5)+' 時 '+Math.floor(ms%36e5/6e4)+' 分'}else if(n<z)el.textContent='旅行進行中 ✈️';else el.textContent='旅程完成，歡迎回家 🏠'}
+function fillFlights(){$('#flight').innerHTML='<h2>✈️ 航班</h2>'+S.flights.map((f,i)=>{const b='flights.'+i;return `<article class="card"><div class="fl"><span class="tm">${E(b+'.dir','去程／回程')}</span><span class="sm">${E(b+'.date','日期')}</span></div><div class="big">${E(b+'.route','路線')}</div><div>${E(b+'.no','航班編號')} ${E(b+'.time','時間')}</div><div class="sm">${E(b+'.note','備註')}</div>${admin?mini('del-flight','✕ 刪除','data-i="'+i+'"'):''}</article>`}).join('')+btn('add-flight','新增航班')}
+function tabs(){$('#tabs').innerHTML=S.days.map((d,i)=>`<button class="tab${i===cur?' on':''}" data-act="tab" data-i="${i}">${esc(d.date)}<small>${d.wk?'週'+esc(d.wk):''}</small></button>`).join('')}
+function panel(anim){const d=S.days[cur];if(!d){$('#panel').innerHTML='';return}const b='days.'+cur;const its=d.items||(d.items=[]),sites=d.sites||(d.sites=[]);
+const head=`<div class="card" style="background:var(--g)">${admin?`<div class="row">${E(b+'.date','日期')} ${E(b+'.wk','週幾')}</div>`:''}<b>${E(b+'.title','今日主題')}</b>${admin?`<div>${mini('mv-day','← 前移','data-d="-1"')}${mini('mv-day','後移 →','data-d="1"')}${mini('del-day','✕ 刪除這天')}</div>`:''}</div>`;
+const list=its.map((it,i)=>{const p=b+'.items.'+i;return `<div class="it${it.m?' must':''}"><div class="card"><div class="row">${(admin||it.t)?`<span class="tm">${E(p+'.t','時間')}</span>`:''}${it.g&&!admin?`<span class="tag" style="background:${TAGC[it.g]||'var(--bg)'}">${esc(it.g)}</span>`:''}${it.m&&!admin?'<span class="must-b">必去</span>':''}</div>${admin?`<div>${sel(p+'.g',TAGOPTS)}${mini('must',it.m?'★ 必去':'☆ 必去','data-i="'+i+'"')}${mini('mv-item','↑','data-i="'+i+'" data-d="-1"')}${mini('mv-item','↓','data-i="'+i+'" data-d="1"')}${mini('del-item','✕ 刪除','data-i="'+i+'"')}</div>`:''}<h3>${E(p+'.n','行程')}</h3><div class="sm">${E(p+'.d','備註')}</div>${(admin||it.a)?`<div class="alt">${E(p+'.a','備選／其他菜色')}</div>`:''}</div></div>`}).join('');
+const st=(sites.length||admin?'<h2 class="h2b">📖 景點故事</h2>':'')+sites.map((s,i)=>{const p=b+'.sites.'+i;return `<div class="card"><b>${E(p+'.n','景點')}</b><div class="sm">${E(p+'.t','故事')}</div>${admin?mini('del-site','✕ 刪除','data-i="'+i+'"'):''}</div>`}).join('')+btn('add-site','新增景點');
+$('#panel').innerHTML=head+`<div class="tl${anim?' pop':''}">${list||'<p class="sm">這天還沒有行程</p>'}</div>`+btn('add-item','新增行程')+st}
+function fillDays(){$('#days').innerHTML='<h2>🗓️ 每日行程</h2><div class="tabs" id="tabs"></div><div id="panel"></div>'+btn('add-day','新增一天');tabs();panel(false)}
+function fillStays(){$('#hotel').innerHTML='<h2>🏨 住宿</h2>'+S.stays.map((s,i)=>{const b='stays.'+i;return `<article class="card"><div class="fl"><span class="tm">${E(b+'.city','城市')}</span><span class="sm">${E(b+'.dates','日期')}</span></div><div class="big">${E(b+'.name','住宿名稱')}</div><div>${E(b+'.addr','地址')}</div><div class="sm">${E(b+'.note','備註')}</div>${admin?mini('del-stay','✕ 刪除','data-i="'+i+'"'):''}</article>`}).join('')+btn('add-stay','新增住宿')}
+function fillLists(){$('#lists').innerHTML='<h2>✅ 清單</h2>'+S.lists.map((L,i)=>{const b='lists.'+i,n=L.items.filter(x=>x.done).length;return `<div class="card"><b>${E(b+'.title','清單名稱')}</b> <span class="sm">${n}/${L.items.length}</span>${admin?' '+mini('del-list','✕ 刪除清單','data-i="'+i+'"'):''}${L.items.map((x,j)=>{const p=b+'.items.'+j;return admin?`<div class="ck">${E(p+'.text','項目')}${mini('del-chk','✕','data-p="'+p+'"')}</div>`:`<label class="ck${x.done?' done':''}"><input type="checkbox" data-chk="${p}"${x.done?' checked':''}><span>${esc(x.text)}</span></label>`}).join('')}${btn('add-chk','新增項目','data-k="'+b+'.items"')}</div>`}).join('')+btn('add-list','新增清單')}
+function render(){document.body.classList.toggle('admin',admin);document.title=S.trip.title||'旅遊行程';$('#app').innerHTML='<main><section id="home"></section><section id="flight"></section><section id="days"></section><section id="lists"></section><section id="hotel"></section></main><footer>開放時間、車次與菜單請於 2027 出發前重查 🌷</footer>';fillNav();fillBar();fillHome();fillFlights();fillDays();fillLists();fillStays();tick()}
+const closeModal=()=>{$('#modal').innerHTML=''};
+function modal(title,fields,ok,okText){const m=$('#modal');m.innerHTML='<div class="ov"><form class="dlg card"><h3>'+esc(title)+'</h3>'+fields.map(f=>`<label class="fld">${esc(f.label)}<input type="${f.type||'text'}" name="${f.name}" placeholder="${esc(f.ph||'')}" autocomplete="off"></label>`).join('')+'<p class="err" id="merr"></p><div class="row"><button type="button" class="btn d" data-act="mclose">取消</button><button class="btn">'+(okText||'確定')+'</button></div></form></div>';
+const f=m.querySelector('form');f.onsubmit=ev=>{ev.preventDefault();const v={};fields.forEach(x=>v[x.name]=f.elements[x.name].value);const r=ok(v);if(r===true)closeModal();else $('#merr').textContent=r||''};setTimeout(()=>{const i=f.querySelector('input');i&&i.focus()},40)}
+function dl(name,text,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},600)}
+function exportHTML(){const c=document.documentElement.cloneNode(true);['#app','#nav','#adminbar','#modal'].forEach(s=>{const e=c.querySelector(s);e&&(e.innerHTML='')});const t=c.querySelector('#toast');t.textContent='';t.className='toast';c.querySelector('body').className='';
+c.querySelector('#seed').textContent=JSON.stringify(S,null,1).replace(/</g,'\\u003c');c.querySelector('title').textContent=S.trip.title||'旅遊行程';dl('portugal-2027.html','<!DOCTYPE html>\n'+c.outerHTML,'text/html');toast('已下載更新後的網頁')}
+const mv=(a,i,j)=>{if(j>=0&&j<a.length){const t=a[i];a[i]=a[j];a[j]=t;return true}};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b)return;const a=b.dataset.act,i=+b.dataset.i,d=+b.dataset.d;const day=S.days[cur];
+switch(a){
+case 'tab':cur=i;tabs();panel(true);return;
+case 'mclose':closeModal();return;
+case 'login':modal('後台登入',[{name:'pw',label:'管理密碼',type:'password',ph:'請輸入密碼'}],v=>{if(!passOK(v.pw))return '密碼不正確';admin=true;try{sessionStorage.setItem('trip-adm','1')}catch(x){}render();toast('已進入後台模式');return true},'登入');return;
+case 'logout':admin=false;try{sessionStorage.removeItem('trip-adm')}catch(x){}render();toast('已離開後台');return;
+case 'add-flight':S.flights.push({dir:'新航班',date:'',route:'',no:'',time:'',note:''});save();fillFlights();return;
+case 'del-flight':if(confirm('確定刪除這個航班？')){S.flights.splice(i,1);save();fillFlights()}return;
+case 'add-day':S.days.push({date:'新日期',wk:'',title:'',items:[],sites:[]});cur=S.days.length-1;save();tabs();panel(true);return;
+case 'del-day':if(S.days.length>1&&confirm('確定刪除這一天？')){S.days.splice(cur,1);if(cur>=S.days.length)cur=S.days.length-1;save();tabs();panel(true)}else if(S.days.length<=1)toast('至少要保留一天');return;
+case 'mv-day':if(mv(S.days,cur,cur+d)){cur+=d;save();tabs();panel(false)}return;
+case 'add-item':day.items.push({t:'',n:'新行程',d:'',g:'步行',m:false,a:''});save();panel(false);return;
+case 'del-item':day.items.splice(i,1);save();panel(false);return;
+case 'mv-item':if(mv(day.items,i,i+d)){save();panel(false)}return;
+case 'must':day.items[i].m=!day.items[i].m;save();panel(false);return;
+case 'add-site':day.sites.push({n:'新景點',t:''});save();panel(false);return;
+case 'del-site':day.sites.splice(i,1);save();panel(false);return;
+case 'add-stay':S.stays.push({city:'',dates:'',name:'新住宿',addr:'',note:''});save();fillStays();return;
+case 'del-stay':if(confirm('確定刪除這個住宿？')){S.stays.splice(i,1);save();fillStays()}return;
+case 'add-list':S.lists.push({title:'新清單',items:[]});save();fillLists();return;
+case 'del-list':if(confirm('確定刪除整份清單？')){S.lists.splice(i,1);save();fillLists()}return;
+case 'add-chk':getP(b.dataset.k).push({text:'新項目',done:false});save();fillLists();return;
+case 'del-chk':{const k=b.dataset.p.split('.'),x=+k.pop();getP(k.join('.')).splice(x,1);save();fillLists();return}
+case 'export-html':exportHTML();return;
+case 'export-json':dl('portugal-2027-data.json',JSON.stringify(S,null,1),'application/json');toast('已匯出資料');return;
+case 'import-json':$('#imp').click();return;
+case 'reset':if(confirm('要把所有內容還原成網頁內建的預設資料嗎？目前的修改會消失。')){S=JSON.parse($('#seed').textContent);cur=0;save();render();toast('已還原預設')}return;
+case 'chpass':modal('修改管理密碼',[{name:'p1',label:'新密碼（至少 4 碼）',type:'password'},{name:'p2',label:'再輸入一次',type:'password'}],v=>{if((v.p1||'').length<4)return '密碼至少 4 碼';if(v.p1!==v.p2)return '兩次輸入不一致';S.passHash=hash(v.p1);save();toast('密碼已更新，記得下載更新後的網頁');return true},'更新');return}});
+$('#imp').addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const o=JSON.parse(r.result);if(!o||!Array.isArray(o.days)||!o.trip)throw 0;S=o;cur=0;save();render();toast('匯入完成')}catch(x){toast('檔案格式不正確')}};r.readAsText(f);e.target.value=''});
+document.addEventListener('input',e=>{const t=e.target,p=t.dataset&&t.dataset.path;if(!p)return;setP(p,t.isContentEditable?t.innerText.replace(/\u00a0/g,' ').replace(/\n+$/,''):t.value);save();if(p.startsWith('trip.d')||p==='trip.end')tick()});
+document.addEventListener('change',e=>{const t=e.target;if(t.dataset&&t.dataset.chk){setP(t.dataset.chk+'.done',t.checked);save();fillLists()}});
+document.addEventListener('focusout',e=>{const p=e.target.dataset&&e.target.dataset.path;if(p&&/^days\.\d+\.(date|wk)$/.test(p))tabs();if(p==='trip.title')document.title=S.trip.title});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if(e.key==='Enter'&&!e.shiftKey&&e.target.isContentEditable){e.preventDefault();e.target.blur()}});
+document.addEventListener('paste',e=>{if(e.target.isContentEditable){e.preventDefault();document.execCommand('insertText',false,(e.clipboardData||window.clipboardData).getData('text/plain'))}});
+{const n=Date.now(),a=new Date(S.trip.depart),z=new Date(S.trip.end);if(n>=a&&n<z)cur=Math.min(Math.floor((n-a)/864e5),S.days.length-1)}
+render();setInterval(tick,30000);
+})();
+</script></body></html>
